@@ -8,9 +8,9 @@ if (!isset($_SESSION['username'])) {
 }
 
 // 连接到 MySQL 数据库
-$host = '172.23.60.213';
+$host = '127.0.0.1';
 $user = 'root';
-$password = 'passwordforroot';
+$password = '';
 $db = 'cs705_db';
 
 $conn = new PDO("mysql:host=$host;dbname=$db;charset=utf8", $user, $password);
