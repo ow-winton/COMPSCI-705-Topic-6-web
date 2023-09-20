@@ -1,0 +1,267 @@
+body {
+    display: flex;
+    position: relative;
+
+}
+
+.right {
+    flex: 1;
+    margin-left: 220px;
+    /* // position: relative; */
+}
+
+nav {
+
+    background-color: #F4EEF8;
+    width: 220px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    margin-bottom: 40px;
+
+}
+
+.mainNav div:first-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: red; */
+    height: 111px;
+}
+
+#new {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    background-color: #E2D2FB;
+    width: 140px;
+    height: 56px;
+    border: 1px solid #E2D2FB;
+    box-shadow: 0px 5px 11px #403d457e;
+}
+
+#new i {
+    font-size: 26px;
+}
+
+.cate {
+    display: flex;
+    flex-direction: column;
+    /* gap: 20px; */
+    color: #403D45;
+    /* margin-left: 20px; */
+}
+
+
+
+nav img {
+    width: 181px;
+    height: 65px;
+    display: block;
+    margin: 37px auto;
+
+
+}
+
+.nav-header {
+    display: flex;
+    align-items: center;
+    /* background-color: red; */
+    height: 56px;
+
+    margin: 8px 12px;
+    padding: 0 16px;
+}
+
+
+
+.nav-header:hover {
+
+    border-radius: 30px;
+    background-color: #E2D2FB;
+    transform: translateY(-2px);
+}
+
+.nav-header:active {
+    border-radius: 30px;
+    background-color: #E2D2FB;
+}
+
+.nav-link i {
+    font-size: 24px;
+}
+
+.nav-link {
+    /* border: #67E1DD 1px solid; */
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #403D45;
+    height: 38px;
+    font-size: 18px;
+
+}
+
+.nav-link:hover {
+    color: #403D45;
+}
+
+.tag-outline {
+    padding-left: 20px;
+    border-top: 1px rgb(218, 215, 215) solid;
+    /* padding-top: 20px; */
+    margin: 16px 16px 0 28px;
+
+}
+
+.tag-title {
+    font-size: 18px;
+    margin-top: 16px;
+    margin-bottom: 8px;
+}
+
+
+
+
+
+
+
+
+
+header {
+    /* box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.05); */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 175px;
+    position: fixed;
+    top: 0;
+    left: 220px;
+    min-width: 787px;
+    /* max-width: 90vw; */
+    width: 85%;
+    z-index: 99;
+    background-color: #fff;
+}
+
+.search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px;
+}
+
+.form-control {
+    width: 374px;
+    height: 44px;
+    background: #BDC8D045 0% 0% no-repeat padding-box;
+    border-radius: 4px;
+}
+
+.fa-solid {
+    color: white;
+}
+
+.btn-outline-success {
+
+    width: 46px;
+    height: 44px;
+    border: 1px white solid;
+    background: #F4EEF8 0% 0% no-repeat padding-box;
+    border-radius: 10px;
+
+}
+
+.btn-outline-success i {
+    color: #403D45;
+}
+
+.btn-outline-success:hover {
+    border: 1px white solid;
+    color: white;
+    background-color: #5B4795;
+}
+
+/* .btn-outline-success i:hover {
+    color: white;
+} */
+
+.avatar {
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.myline {
+    width: 150%;
+    border-top: 1px solid #ccc;
+
+}
+
+
+.btn-primary {
+    margin-right: 20px;
+    align-self: flex-end;
+    width: 85px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    border: 1px solid transparent;
+    background: #BECCD6 0% 0% no-repeat padding-box;
+    border-radius: 4px;
+}
+
+.btn-primary:hover {
+    border-color: transparent;
+    background-color: orange;
+}
+
+
+
+
+
+.path {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #403D45;
+    font-weight: bold;
+}
+
+.breadcrumb {
+    padding: 16px 32px;
+    display: flex;
+    min-width: 787px;
+    max-width: 1234px;
+    /* background-color: red; */
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.user-info {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.tag-name {
+    /* background-color: red; */
+    height: 30px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: start;
+
+}
+
+.tag-name li {
+    font-size: 16px;
+}
