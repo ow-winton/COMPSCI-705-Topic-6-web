@@ -127,7 +127,7 @@ if (isset($_GET['delete'])) {
     $files = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
     foreach ($files as $file) {
-        echo $file['filename'] . ' <a href="index.php?delete=' . $file['id'] . '">删除</a><br>';
+        echo $file['filename'] . ' <a href="index.php?delete=' . $file['id'] . '">删除</a>' . ' <a href="download.php?id=' . $file['id'] . '">下载</a><br>';
     }
     ?>
 <?php else: ?>

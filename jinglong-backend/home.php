@@ -72,7 +72,7 @@ $stmt->execute();
 $files = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 foreach ($files as $file) {
-    echo $file['filename'] . ' <a href="index.php?delete=' . $file['id'] . '">删除</a>';
+    echo $file['filename'] . ' <a href="index.php?delete=' . $file['id'] . '">删除</a>' . ' <a href="download.php?id=' . $file['id'] . '">下载</a>';
 
     // 查询文件的标签列表
     $stmt = $conn->prepare("SELECT t.tag_name FROM tags t JOIN file_tags ft ON t.id = ft.tag_id WHERE ft.file_id = :file_id");
