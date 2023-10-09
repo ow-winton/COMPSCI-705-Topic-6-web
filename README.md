@@ -8,9 +8,12 @@ For a detailed feature demo presentation , please refer to the "PIM_implementati
 
 The main functionalities of this project are located in the `main` branch of the GitHub project. However, the machine learning features, which are not yet successfully integrated, are stored in the `bopan-machine` branch: [https://github.com/ow-winton/COMPSCI-705-Topic-6-web/tree/bopan-machine](https://github.com/ow-winton/COMPSCI-705-Topic-6-web/tree/bopan-machine).
 
-**Project cloud link:**
-Our project is based on cloud technology, users can use this link directly try to manage personal information
-pims705.infinityfreeapp.com
+# Project cloud link:
+Our project is hosted on cloud technology, allowing users to directly manage their personal information using the following link:
+
+[PIMS705 - Personal Information Management System](http://pims705.infinityfreeapp.com/LoginPage.php)
+
+Feel free to explore and experience the functionalities of our system on this cloud platform. If you encounter any issues or have feedback, please let us know. Thank you for your interest in our project!
 
 ## Installation
 
