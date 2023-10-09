@@ -8,6 +8,10 @@ For a detailed feature demo presentation , please refer to the "PIM_implementati
 
 The main functionalities of this project are located in the `main` branch of the GitHub project. However, the machine learning features, which are not yet successfully integrated, are stored in the `bopan-machine` branch: [https://github.com/ow-winton/COMPSCI-705-Topic-6-web/tree/bopan-machine](https://github.com/ow-winton/COMPSCI-705-Topic-6-web/tree/bopan-machine).
 
+**Project cloud link:**
+Our project is based on cloud technology, users can use this link directly try to manage personal information
+pims705.infinityfreeapp.com
+
 ## Installation
 
 This system is a web-based management system based on cloud technology, eliminating the need for additional installations. Users can access the system using the following IP address, eliminating installation and environment hassles to improve user experience. If you wish to deploy the project locally, please refer to the "Deploying the project to local path.docx" file in the folder.
@@ -34,7 +38,7 @@ Regarding the machine learning functionality, since it has not been successfully
 
 7. **File Retrieval by Tag (Implemented):** Users can filter and retrieve files tagged with specific tags, significantly improving file retrieval efficiency.
 
-8. **Cloud Storage File Management (Implemented):** By deploying this project on a cloud platform, any user can access the system via a domain name or IP address and manage files across different devices.
+8. **Cloud Storage File Management (Implemented):** By deploying this project on a cloud platform, any user can access the system via a domain name or IP address and manage files across different devices. 
 
 9. **Favorite Files (Functionality Implemented, Not Integrated):** The system allows users to mark their favorite or frequently used files as "favorites." Searching for these files using the "favorite" tag can enhance user file management efficiency. This feature has been developed but has not yet been integrated into the main project.
 
