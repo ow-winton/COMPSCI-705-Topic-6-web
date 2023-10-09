@@ -2,6 +2,8 @@
 
 This project involves the development of a Personal Information Management (PIM) system that incorporates machine learning and cloud technology. The primary goal of this project is to enhance user-machine interaction at multiple levels.
 
+For a detailed feature demo presentation , please refer to the "PIM_implementation.mp4" file in the attachments.
+
 **GitHub Repository:** [https://github.com/ow-winton/COMPSCI-705-Topic-6-web/tree/main](https://github.com/ow-winton/COMPSCI-705-Topic-6-web/tree/main)
 
 The main functionalities of this project are located in the `main` branch of the GitHub project. However, the machine learning features, which are not yet successfully integrated, are stored in the `bopan-machine` branch: [https://github.com/ow-winton/COMPSCI-705-Topic-6-web/tree/bopan-machine](https://github.com/ow-winton/COMPSCI-705-Topic-6-web/tree/bopan-machine).
