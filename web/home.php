@@ -8,10 +8,10 @@ session_start();
 }*/
 
 // 连接到 MySQL 数据库
-$host = '127.0.0.1';
-$user = 'root';
-$password = '123';
-$db = '112';
+$host = 'sql210.infinityfree.com';
+$user = 'if0_34966954';
+$password = 'CbyXRcHCPk';
+$db = 'if0_34966954_cs705_web_app_db';
 
 $conn = new PDO("mysql:host=$host;dbname=$db;charset=utf8", $user, $password);
 

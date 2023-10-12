@@ -140,10 +140,10 @@ if (!isset($_SESSION['username'])) {
     </tr>
   </thead>
   <tbody>
-  	<?php 
+  	<?php
 
- $stmt = $conn->prepare("SELECT * FROM files ");
-   
+    $stmt = $conn->prepare("SELECT * FROM files WHERE user_id = :user_id");
+    $stmt->bindParam(':user_id', $_SESSION['user_id']);
     $stmt->execute();
     $user = $stmt->fetchAll(PDO::FETCH_ASSOC);
 		foreach ($user as $key => $v) {
@@ -164,7 +164,7 @@ if (!isset($_SESSION['username'])) {
      <a href="download.php?id=<?php echo $v['id'] ?>"> Download</a>
      
 
-      </th>
+      </td>
     </tr>
 	   <?php } ?>
    

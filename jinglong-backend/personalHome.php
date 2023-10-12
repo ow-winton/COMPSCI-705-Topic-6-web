@@ -120,24 +120,24 @@
       <td><i class="fa-solid fa-heart" style="color: #5B4795;"></i></td>
       <td> 
       <span class="tags tags-orange">interview</span></td>
-      <td >1/09/2023 9:30am</th>
+      <td >1/09/2023 9:30am</td>
       <td class="action">
       <i class="fa-regular fa-trash-can" style="color: #5B4795;"></i>
       <i class="fa-regular fa-pen-to-square" style="color: #5B4795;"></i>
 
-      </th>
+      </td>
     </tr>
     <tr>
     <th scope="row"><input class="form-check-input" type="checkbox" value="" id=""></th>
       <td> interviewScript.doc</td>
       <td><i class="fa-regular fa-heart" style="color: #5B4795;"></i></td>
       <td> </td>
-      <td >1/09/2023 9:30am</th>
+      <td >1/09/2023 9:30am</td>
       <td class="action">
       <i class="fa-regular fa-trash-can" style="color: #5B4795;"></i>
       <i class="fa-regular fa-pen-to-square" style="color: #5B4795;"></i>
 
-      </th>
+      </td>
     </tr>
     <tr>
     <th scope="row"><input class="form-check-input" type="checkbox" value="" id=""></th>
@@ -145,12 +145,12 @@
       <td><i class="fa-regular fa-heart" style="color: #5B4795;"></i></td>
       <td> <span class="tags tags-green">Job2023</span>
      </td>
-      <td >1/09/2023 9:30am</th>
+      <td >1/09/2023 9:30am</td>
       <td class="action">
       <i class="fa-regular fa-trash-can" style="color: #5B4795;"></i>
       <i class="fa-regular fa-pen-to-square" style="color: #5B4795;"></i>
 
-      </th>
+      </td>
     </tr>
     <tr>
     <th scope="row"><input class="form-check-input" type="checkbox" value="" id=""></th>
@@ -158,12 +158,12 @@
       <td><i class="fa-solid fa-heart" style="color: #5B4795;"></i></td>
       <td> <span class="tags tags-green">Job2023</span>
       <span class="tags tags-orange">interview</span></td>
-      <td >1/09/2023 9:30am</th>
+      <td >1/09/2023 9:30am</td>
       <td class="action">
       <i class="fa-regular fa-trash-can" style="color: #5B4795;"></i>
       <i class="fa-regular fa-pen-to-square" style="color: #5B4795;"></i>
 
-      </th>
+      </td>
     </tr>
    
    
