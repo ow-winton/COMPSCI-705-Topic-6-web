@@ -6,10 +6,10 @@ if (!isset($_SESSION['username']) || !isset($_GET['id'])) {
     exit();
 }
 
-$host = 'localhost';
-$user = 'ss';
-$password = '123123';
-$db = 'ss';
+$host = 'sql210.infinityfree.com';
+$user = 'if0_34966954';
+$password = 'CbyXRcHCPk';
+$db = 'if0_34966954_cs705_web_app_db';
 
 $conn = new PDO("mysql:host=$host;dbname=$db;charset=utf8", $user, $password);
 $file_id = $_GET['id'];

@@ -50,7 +50,7 @@ if (isset($_POST['login'])) {
         $_SESSION['user_id'] = $user['id'];
         $_SESSION['username'] = $user['username'];
 
-        header("Location: home.php");
+        header("Location: personalHome.php");
     } else {
         echo "用户名或密码错误。";
     }

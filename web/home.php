@@ -2,10 +2,10 @@
 session_start();
 
 // 检查用户是否已登录
-if (!isset($_SESSION['username'])) {
+/*if (!isset($_SESSION['username'])) {
     header("Location: index.php");
     exit();
-}
+}*/
 
 // 连接到 MySQL 数据库
 $host = 'sql210.infinityfree.com';
@@ -52,6 +52,7 @@ if (isset($_POST['add_tag'])) {
 <html>
 <head>
     <title>文件管理系统 - 主页</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/home.css">
 </head>
 <body>
 <h1>欢迎回来，<?php echo $_SESSION['username']; ?>！</h1>
