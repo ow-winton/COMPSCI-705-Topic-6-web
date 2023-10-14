@@ -110,7 +110,7 @@ if (!empty($_POST)) {
             <a href="#">Forgot password?</a>
           </div>
           <div class="submit">
-            <input type="submit" value="Sign up" />
+            <input type="submit" value="Login" />
           </div>
           <div class="login-link mt-2">
             <p>

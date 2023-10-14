@@ -9,9 +9,9 @@ session_start();
 
 // 连接到 MySQL 数据库
 $host = '127.0.0.1';
-$user = 'root';
-$password = '123';
-$db = '112';
+$user = 'ss';
+$password = '123123';
+$db = 'ss';
 
 $conn = new PDO("mysql:host=$host;dbname=$db;charset=utf8", $user, $password);
 

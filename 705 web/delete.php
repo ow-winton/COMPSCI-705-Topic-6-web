@@ -5,7 +5,7 @@ $id=$_GET['id'];
     $stmt->bindParam(':id', $id);
   
     $stmt->execute();
-   header("Location: personalHome.php");
+   header("Location: index.php");
 
 
  ?>

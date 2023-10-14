@@ -47,16 +47,16 @@ if (!isset($_SESSION['username'])) {
       <div class="cate">
         <ul class="nav flex-column">
           <li class="nav-item nav-header">
-            <a class="nav-link active" href="#">
+            <a class="nav-link active" href="favorite.php">
             <i class="fa-regular fa-heart" id="nav-icon-heart" 
             style="color: #403d45;"></i>
       
-              Favorites</a>
+            Favorites</a>
           </li>
         </ul>
         <ul class="nav flex-column">
           <li class="nav-item nav-header">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="photo.php">
             <i class="fa-regular fa-images" style="color: #403d45;"></i>
               Photos</a>
           </li>
@@ -73,14 +73,16 @@ if (!isset($_SESSION['username'])) {
           <li class="tag-title">
            Tags
           </li>
+          <?php $stmt = $conn->prepare("SELECT * FROM tags ");
+   
+    $stmt->execute();
+    $t = $stmt->fetchAll(PDO::FETCH_ASSOC);
+		foreach ($t as $key => $v) { ?>
           <li class="tag-name">
           <i class="fa-solid fa-tag" style="color: #403d45;"></i>
-           <span class="text-green"> Job2023 </span>
+           <span class="text-green"><a href="tag.php?id=<?php echo $v['id'] ?> "><?php echo $v['tag_name'] ?> </a></span>
           </li>
-          <li class="tag-name">
-          <i class="fa-solid fa-tag" style="color: #403d45;"></i>
-          <span class="text-orange"> interview </span>
-          </li>
+       <?php } ?>
         </ul> 
       </div>
         <!-- <ul class="nav flex-column">
@@ -106,7 +108,7 @@ if (!isset($_SESSION['username'])) {
           </form>
 
           <div class="user-info">
-            <div class="user-name"> Deeplical Y</div>
+            <div class="user-name"> <a href="logout.php">Logout</a></div>
             <img
               src="https://static.vecteezy.com/system/resources/previews/002/002/403/original/man-with-beard-avatar-character-isolated-icon-free-vector.jpg "
               alt="Avatar"
@@ -139,8 +141,10 @@ if (!isset($_SESSION['username'])) {
   </thead>
   <tbody>
   	<?php 
+ $uid=$_SESSION['user_id'];
+ $stmt = $conn->prepare("select files.*,f.id as fid from files left join favorite f on f.fid =files.id where files.user_id =$uid");
 
- $stmt = $conn->prepare("SELECT * FROM files ");
+
    
     $stmt->execute();
     $user = $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -158,7 +162,17 @@ if (!isset($_SESSION['username'])) {
       
     
       <td class="action">
-     <a href="delete.php?id=<?php echo $v['id'] ?>"> <i class="fa-regular fa-trash-can" style="color: #5B4795;"></i></a>
+      	<?php if(empty($v['fid'])): ?>
+      	 <a href="f.php?id=<?php echo $v['id'] ?>"><i class="fa-regular fa-heart" id="nav-icon-heart" 
+            style="color: #403d45;"></i></a>
+            <?php else: ?>
+             <a href="fdelete.php?id=<?php echo $v['fid'] ?>"><img src="Images/x.png" style="width: 18px;height: 18px"></a> 
+<?php endif ?>
+             | 
+      <a href="delete.php?id=<?php echo $v['id'] ?>"> <i class="fa-regular fa-trash-can" style="color: #5B4795;"></i></a> | 
+     <a href="download.php?id=<?php echo $v['id'] ?>"> Download</a> 
+
+
      
 
       </th>
@@ -191,7 +205,8 @@ if (!isset($_SESSION['username'])) {
     </svg>
     <p class="small my-2">Drag &amp; Drop background image(s) inside dashed region<br><i>or</i></p>
     <center>
-    <input type="file" multiple  name="file[]" />
+    <input type="file" multiple  name="file[]" /><br>
+   TAG: <input type="text"  name="tag" />
 </center>
   
 
@@ -211,10 +226,10 @@ if (!isset($_SESSION['username'])) {
           <center>
               <button
                 type="submit"
-                class="btn btn-secondary cancel"
+                class="btn btn-secondary Cancel"
                 data-bs-dismiss="modal"
               >
-                Cancel
+                Upload
               </button>
               <button type="button" class="btn btn-secondary sure-del">
                 Delete
